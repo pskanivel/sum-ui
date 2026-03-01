@@ -1,0 +1,25 @@
+<h2>Add Two Numbers</h2>
+
+<input type="number" [(ngModel)]="num1" placeholder="Number 1">
+<input type="number" [(ngModel)]="num2" placeholder="Number 2">
+<button (click)="add()">Add</button>
+
+<hr>
+
+<h3>Stored Results</h3>
+
+<table border="1" *ngIf="results.length > 0">
+  <tr>
+    <th>Number 1</th>
+    <th>Number 2</th>
+    <th>Result</th>
+  </tr>
+
+  <tr *ngFor="let item of results">
+    <td>{{item.number1}}</td>
+    <td>{{item.number2}}</td>
+    <td>{{item.result}}</td>
+  </tr>
+</table>
+
+<p *ngIf="results.length === 0">No records yet.</p>
