@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 export class Sum {
 
   // ⚠ Replace with your actual .NET port
-  private apiUrl = 'https://localhost:7051/api/sum';
+  private apiUrl = 'https://sum-api-test-cjc0axgpbmcbawhy.centralindia-01.azurewebsites.net/api/sum';
 
   constructor(private http: HttpClient) { }
 
